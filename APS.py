@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # 1. CONSTANTES DO SISTEMA (MODIFIQUE AQUI COMO SE FOSSEM #define EM C)
 # ==============================================================================
-CAMINHO_VIDEO      = r"C:\Users\Gabriel Carivalis\Trabalho Física\WhatsApp Video 2026-10-26 at 22.21.34.mp4" # Nome do seu ficheiro de vídeo
+CAMINHO_VIDEO      = r"C:\Users\Gabriel Carivalis\Trabalho Física\Vídeo Pendulo" # Nome do seu ficheiro de vídeo
 SAIDA_CSV          = "dados_pendulo_real.csv"                    # Nome da tabela CSV que será gerada
 SAIDA_VIDEO_DIAG   = "video_real_rastreado.mp4"                  # Vídeo salvo com a corda virtual e centro
 
