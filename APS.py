@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # ==============================================================================
 # 1. CONSTANTES DO SISTEMA (MODIFIQUE AQUI COMO SE FOSSEM #define EM C)
 # ==============================================================================
-CAMINHO_VIDEO      = r"C:\Users\Gabriel Carivalis\Trabalho Física\Vídeo Pendulo" # Nome do seu ficheiro de vídeo
+CAMINHO_VIDEO      = r"C:\Users\Gabriel Carivalis\Trabalho Física\Vídeo_Pendulo.mp4" # Nome do seu ficheiro de vídeo
 SAIDA_CSV          = "dados_pendulo_real.csv"                    # Nome da tabela CSV que será gerada
 SAIDA_VIDEO_DIAG   = "video_real_rastreado.mp4"                  # Vídeo salvo com a corda virtual e centro
 
@@ -410,7 +410,7 @@ def analisar_pendulo():
 
     fig, axs = plt.subplots(3, 1, figsize=(10, 10))
     axs[0].plot(t_full, theta_deg, label="Ângulo Experimental θ(t)", color="royalblue")
-    axs[0].plot(t_cristas, np.degrees(th_cristas), "ro", markersize=4, label="Cristas/Vales Detetados")
+    axs[0].plot(t_cristas, np.degrees(th_cristas), "ro", markersize=4, label="Cristas/Vales Detectados")
     axs[0].plot(t_vales, -np.degrees(th_vales), "ro", markersize=4)
     axs[0].plot(t_full, np.degrees(envelope_amortecimento(t_full, theta0_fit, gamma_exp)), "r--",
                 label=f"Envelope: γ = {gamma_exp:.5f} s^-1 | Q = {fator_Q:.1f}")
